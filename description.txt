@@ -1,0 +1,56 @@
+A funky audio visualizer. 
+
+If you would like us to make more content like this, please like and favourite! :)
+
+[h1]Features[/h1]
+- Displays the the left and right audio channels from your system in various different ways.
+- Fully customizable, from the background color (gradient or solid) and icon to disabling the shadows and inner glow.
+- Constantly performs self calibration to match your systems max audio levels.
+
+[h1]Changelog[/h1]
+
+[VERSION 1.7]
+> Added ability to change background image and set gradient composite mode, by request of BlackSteel97.
+> Added option to disable window border.
+> Added screenshot to demo custom background functionality.
+
+NOTE: Javascript image scaling sucks, so try to use images that have the same dimensions as your screen for the best results.
+
+[VERSION 1.5]
+> Added ability to change the center icon, by request of AVĪCI.
+
+[VERSION 1.46]
+> Minor fix to make the curves line up with the rest of the UI.
+
+[VERSION 1.45]
+> Fixed breaking bug where audio refused to play. Special thanks to user ye' old apple for finding this one.
+
+[VERSION 1.4]
+> Improved audio calibration
+> Added slider to control responsiveness
+> Added slider to control memory length
+
+[VERSION 1.36]
+> Added video, new screenshot, new preview icon and fixed this text.
+
+[VERSION 1.35]
+> Fixed a bug where wallpaper was no longer receiving audio
+> Added functionality to customize background color
+> Added option to disable shadow and inner glow
+
+[VERSION 1.2]
+> Fixed curves
+> Improved ripples
+
+[VERSION 1.0]
+> Added edge ripples
+> Added fade when audio starts and finishes
+> UI is now centered properly vertically aswell as horizontally, with and option for screens with a smaller taskbar.
+
+[VERSION 0.95]
+> Added color pickers
+
+[VERSION 0.9]
+> Remembers max audio between tracks.
+> Centered UI properly
+> Minified code

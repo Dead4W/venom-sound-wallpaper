@@ -1,0 +1,253 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "A funky audio visualizer. \n\nIf you would like us to make more content like this, please like and favourite! :)\n\nFeatures\n- Displays the the left and right audio channels from your system in various different ways.\n- Fully customizable, from the background color (gradient or solid) and icon to disabling the shadows and inner glow.\n- Constantly performs self calibration to match your systems max audio levels.\n\nChangelog\n\n[VERSION 2.1]\nMassively increased performance. Add slider to modify visualizer resolution. Add FPS meter (Disabled by default. Enable in options)\n\n[VERSION 1.7]\n> Added ability to change background image and set gradient composite mode, by request of BlackSteel97.\n> Added option to disable window border.\n> Added screenshot to demo custom background functionality.\n\nNOTE: Javascript image scaling sucks, so try to use images that have the same dimensions as your screen for the best results.\n\n[VERSION 1.5]\n> Added ability to change the center icon, by request of AVĪCI.\n\n[VERSION 1.46]\n> Minor fix to make the curves line up with the rest of the UI.\n\n[VERSION 1.45]\n> Fixed breaking bug where audio refused to play. Special thanks to user ye' old apple for finding this one.\n\n[VERSION 1.4]\n> Improved audio calibration\n> Added slider to control responsiveness\n> Added slider to control memory length\n\n[VERSION 1.36]\n> Added video, new screenshot, new preview icon and fixed this text.\n\n[VERSION 1.35]\n> Fixed a bug where wallpaper was no longer receiving audio\n> Added functionality to customize background color\n> Added option to disable shadow and inner glow\n\n[VERSION 1.2]\n> Fixed curves\n> Improved ripples\n\n[VERSION 1.0]\n> Added edge ripples\n> Added fade when audio starts and finishes\n> UI is now centered properly vertically aswell as horizontally, with and option for screens with a smaller taskbar.\n\n[VERSION 0.95]\n> Added color pickers\n\n[VERSION 0.9]\n> Remembers max audio between tracks.\n> Centered UI properly\n> Minified code",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"angleResolution" : 
+			{
+				"editable" : true,
+				"max" : 1024,
+				"min" : 10,
+				"order" : 4,
+				"text" : "Visualiser angle resolution",
+				"type" : "slider",
+				"value" : 256
+			},
+			"backgroundBlendMode" : 
+			{
+				"condition" : "customBackground.value",
+				"options" : 
+				[
+					{
+						"label" : "Normal",
+						"value" : 1
+					},
+					{
+						"label" : "Multiply",
+						"value" : 2
+					},
+					{
+						"label" : "Screen",
+						"value" : 3
+					},
+					{
+						"label" : "Overlay",
+						"value" : 4
+					},
+					{
+						"label" : "Darken",
+						"value" : 5
+					},
+					{
+						"label" : "Lighten",
+						"value" : 6
+					},
+					{
+						"label" : "Color-dodge",
+						"value" : 7
+					},
+					{
+						"label" : "Color-burn",
+						"value" : 8
+					},
+					{
+						"label" : "Hard-light",
+						"value" : 9
+					},
+					{
+						"label" : "Soft-light",
+						"value" : 10
+					},
+					{
+						"label" : "Difference",
+						"value" : 11
+					},
+					{
+						"label" : "Exclusion",
+						"value" : 12
+					},
+					{
+						"label" : "Hue",
+						"value" : 13
+					},
+					{
+						"label" : "Saturation",
+						"value" : 14
+					},
+					{
+						"label" : "Color",
+						"value" : 15
+					},
+					{
+						"label" : "Luminosity",
+						"value" : 16
+					}
+				],
+				"order" : 21,
+				"text" : "Background Blend Mode",
+				"type" : "combo",
+				"value" : 1
+			},
+			"backgroundCenter" : 
+			{
+				"order" : 1,
+				"text" : "Background Color at center",
+				"type" : "color",
+				"value" : "0.2980 0.3882 0.4156"
+			},
+			"backgroundEdge" : 
+			{
+				"order" : 2,
+				"text" : "Background Color at edge",
+				"type" : "color",
+				"value" : "0.2 0.2 0.2"
+			},
+			"backgroundGradOpacity" : 
+			{
+				"condition" : "customBackground.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 22,
+				"text" : "Background gradient opacity",
+				"type" : "slider",
+				"value" : 20
+			},
+			"borderless" : 
+			{
+				"order" : 6,
+				"text" : "Enable borderless mode. (Overrides flat UI setting)",
+				"type" : "bool",
+				"value" : true
+			},
+			"bucketlife" : 
+			{
+				"editable" : true,
+				"max" : 300,
+				"min" : 0,
+				"order" : 3,
+				"text" : "Audio Volume Memory (Seconds)",
+				"type" : "slider",
+				"value" : 10
+			},
+			"customBackground" : 
+			{
+				"order" : 20,
+				"text" : "Custom Background",
+				"type" : "file"
+			},
+			"customIcon" : 
+			{
+				"order" : 13,
+				"text" : "Custom Icon",
+				"type" : "file"
+			},
+			"enableFlatUI" : 
+			{
+				"order" : 4,
+				"text" : "Enable flat UI.",
+				"type" : "bool",
+				"value" : false
+			},
+			"enableFpsMeter" : 
+			{
+				"order" : 5,
+				"text" : "Enable FPS meter.",
+				"type" : "bool",
+				"value" : false
+			},
+			"enableRipple" : 
+			{
+				"order" : 6,
+				"text" : "Enable outer circle ring (may affect performance)",
+				"type" : "bool",
+				"value" : true
+			},
+			"iconH" : 
+			{
+				"condition" : "customIcon.value",
+				"editable" : true,
+				"max" : 900,
+				"min" : 0,
+				"order" : 15,
+				"text" : "Custom icon height",
+				"type" : "slider",
+				"value" : 300
+			},
+			"iconW" : 
+			{
+				"condition" : "customIcon.value",
+				"editable" : true,
+				"max" : 900,
+				"min" : 0,
+				"order" : 14,
+				"text" : "Custom icon width",
+				"type" : "slider",
+				"value" : 300
+			},
+			"lChannelFade" : 
+			{
+				"order" : 6,
+				"text" : "Left Channel Secondary",
+				"type" : "color",
+				"value" : "0.898 0.6627 0.4470"
+			},
+			"lChannelMain" : 
+			{
+				"order" : 7,
+				"text" : "Left Channel Primary",
+				"type" : "color",
+				"value" : "0.9294 0.9019 0.5019"
+			},
+			"rChannelFade" : 
+			{
+				"order" : 8,
+				"text" : "Right Channel Secondary",
+				"type" : "color",
+				"value" : "0.2627 0.6627 0.8470"
+			},
+			"rChannelMain" : 
+			{
+				"order" : 9,
+				"text" : "Right Channel Primary",
+				"type" : "color",
+				"value" : "0.6347 0.9019 0.8431"
+			},
+			"schemecolor" : 
+			{
+				"order" : 10,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.12941176470588237 0.12941176470588237 0.12941176470588237"
+			},
+			"sensitivity" : 
+			{
+				"editable" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 11,
+				"text" : "Decrease Responsiveness",
+				"type" : "slider",
+				"value" : 1
+			},
+			"usingSmallIcons" : 
+			{
+				"order" : 12,
+				"text" : "Enable small taskbar icon margin (to center UI properly).",
+				"type" : "bool",
+				"value" : false
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"monetization" : false,
+	"preview" : "preview.gif",
+	"tags" : [ "Music" ],
+	"title" : "Venom Sound",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 1107674259
+}
